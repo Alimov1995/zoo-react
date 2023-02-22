@@ -1,0 +1,183 @@
+.pay {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  background-image: url(../Images/bg-test.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  &__element {
+    padding-top: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__caption {
+    font-family: "Rubik-Regular";
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #c5e1e6;
+  }
+  .box__img {
+    display: none;
+  }
+  .pay__vector--active {
+    display: none;
+  }
+  .pay__btn--active {
+    display: none;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+    font-family: "RobotoMono-Medium";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #0d444d;
+    cursor: pointer;
+  }
+  .bg:hover {
+    background-color: #19707d;
+    color: #ffffff;
+  }
+  .bg {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 174px;
+    height: 30px;
+    background: #c5e1e6;
+    border-radius: 100px;
+    transition: all 0.3s;
+  }
+  span {
+    position: absolute;
+    left: 50px;
+    width: 200px;
+  }
+  &__card {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+  }
+  .box__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    width: 145px;
+    height: 145px;
+    background: #ffffff;
+    box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+    border-radius: 50%;
+  }
+  &__box {
+    width: 367px;
+  }
+  .box__text {
+    padding-top: 14px;
+    font-family: "Rubik-Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #c5e1e6;
+    text-align: center;
+  }
+  &__vector {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 640px) {
+  .pay {
+    margin-top: 0px;
+    background-image: url(../Images/pay.png);
+    background-size: cover;
+    width: 100%;
+    height: 461px;
+    &__element {
+      padding-top: 150px;
+    }
+    &__caption {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__btn {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .bg {
+      margin-right: 50px;
+    }
+    span {
+      left: 50px;
+      width: 155px;
+    }
+    .box__img {
+      display: none;
+    }
+
+    .pay__vector {
+      display: none;
+    }
+    .pay__vector--active {
+      display: flex;
+    }
+    &__card {
+      margin-top: 50px;
+    }
+    .box__circle {
+      width: 113px;
+      height: 113px;
+    }
+    .box__text {
+      width: 186px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .pay {
+    background-image: url(../Images/pay-and-feed.png);
+    width: 100%;
+    height: 900px;
+
+    &__element {
+      padding-top: 30px;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__box {
+      width: 187px;
+    }
+    .box__text {
+      margin-bottom: 8px;
+    }
+    .box__img {
+      display: block;
+      margin: 0 auto;
+    }
+    .pay__vector--active {
+      display: none;
+    }
+    &__btn {
+      display: none;
+    }
+    .pay__btn--active {
+      margin-top: 52px;
+      display: block;
+    }
+    .bg {
+      margin: 0 auto;
+    }
+    span {
+      left: 0px;
+      width: 170px;
+    }
+  }
+}

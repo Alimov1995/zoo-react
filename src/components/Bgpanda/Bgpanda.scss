@@ -1,0 +1,25 @@
+.panda-img {
+    img {
+      margin-top: 30px;
+      width: 100%;
+      height: 530px;
+    }
+  }
+  @media (max-width: 640px) {
+    .panda-img {
+      img {
+        height: 291px;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .panda-img {
+      background-image: url(../Images/Illustration2.png);
+      width: 100%;
+      height: 291px;
+      img {
+        display: none;
+      }
+    }
+  }
+  

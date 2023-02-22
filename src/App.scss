@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "RobotoMono-Regular";
+  src: url(./components/Font/Roboto-Mono/RobotoMono-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoMono-Medium";
+  src: url(./components/Font/Roboto-Mono/RobotoMono-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoMono-Bold";
+  src: url(./components/Font/Roboto-Mono/RobotoMono-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik-Light";
+  src: url(./components/Font/Rubik/Rubik-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(./components/Font/Rubik/Rubik-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url(./components/Font/Rubik/Rubik-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(./components/Font/Roboto/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(./components/Font/Roboto/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media (max-width: 1140px) {
+  .container {
+    width: 90%;
+  }
+}

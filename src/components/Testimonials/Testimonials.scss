@@ -1,0 +1,134 @@
+.testimonials {
+  margin-top: 62px;
+  &__element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__caption {
+    font-family: "Rubik-Regular";
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0d444d;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 20px;
+    font-family: "RobotoMono-Regular";
+    background-color: transparent;
+    border: 1.5px solid #19707d;
+    border-radius: 100px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #19707d;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  &__btn:hover {
+    background-color: #19707d;
+    color: #e5eaeb;
+  }
+  &__btn:hover path {
+    fill: #ffffff;
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+  }
+  &__box {
+    width: 367px;
+    height: 190px;
+    padding-top: 28px;
+    padding-left: 45px;
+    background-color: #e5eaeb;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      20% 75%,
+      16% 86%,
+      13% 75%,
+      0% 75%
+    );
+  }
+  .box__data {
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    line-height: 16px;
+    color: #b3b3b3;
+  }
+  .box__parag {
+    padding-top: 9px;
+    width: 222px;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    line-height: 19px;
+    font-style: italic;
+    color: #2d2d2d;
+  }
+  .testimonials__people--active {
+    display: none;
+  }
+  &__designers {
+    display: flex;
+    gap: 220px;
+    margin-top: -25px;
+    margin-left: 20px;
+  }
+  &__people {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .people__name {
+    font-family: "Roboto-Regular";
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .testimonials__btn--active {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .testimonials {
+    &__card {
+      flex-direction: column;
+      align-items: center;
+    }
+    .testimonials__people--active {
+      display: flex;
+      margin-top: -20px;
+      margin-left: -120px;
+      margin-bottom: 10px;
+    }
+    &__people {
+      display: none;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .testimonials {
+    &__box {
+      width: 300px;
+    }
+    &__btn {
+      display: none;
+    }
+    .testimonials__btn--active {
+      display: flex;
+      margin-top: 24px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
